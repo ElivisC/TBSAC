@@ -1,4 +1,4 @@
-# TBSAC beam control method in superconducting linear accelerator
+# TBSAC:beam control method in superconducting linear accelerator
 
 [![GitHub stars](https://img.shields.io/github/stars/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/你的GitHub仓库名/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=yellow)](https://github.com/你的GitHub仓库名/issues)
@@ -8,7 +8,8 @@
 ## Description
 
 This project provide the source code of our article"[Trend-Based SAC Beam Control Method with
-Zero-Shot in Superconducting Linear Accelerator](https://arxiv.org/pdf/2305.13869.pdf)".
+Zero-Shot in Superconducting Linear Accelerator](https://arxiv.org/pdf/2305.13869.pdf)". And the scheme is shown in the following figure.
+[![Scheme of our method](https://github.com/ElivisC/TBSAC/blob/main/figures/scheme_v1.png)](https://github.com/ElivisC/TBSAC/blob/main/figures/scheme_v1.png)
 
 Two different typical beam control tasks were performed on China Accelerator Facility for Superheavy Elements (CAFe II) and a light particle injector(LPI) respectively.
 The orbit correction tasks were performed in three cryomodules in CAFe II seperately, 
@@ -22,8 +23,8 @@ accomplish beam commissioning tasks while upholding the same standard as skilled
 Here we provide the source code of orbit correction task in the superconducting section in CAFe II. 
 
 ## Installation
-You can run the following command to install the python packages
-`pip install -r requirements.txt`
+You can run  `pip install -r requirements.txt` to install the python packages
+
 ## How to use
 
 - **Step 1**: Firstly, you need to confirm whether there are any errors in the installation of magnets in the real accelerator (such as errors in the installation of the horizontal and vertical correction magnets). If there are errors, you need to integrate this information into the `real_engine.py`. In addition, the polarity of the measured solenoid in the real accelerator needs to be introduced into the lattice file(`.dat` for us) of your accelerator simulation software.
@@ -68,6 +69,6 @@ FIELD_MAP 7700 210 -26 20 -1.44 1.44 0 0 hwr010 0
 
 ---
 
-**如有帮助，请点个 `Star` 支持一下，万分感谢！😉**
+**If this is helpful, please give it a 'Star' to support, thank you very much! 😉**
 
 
