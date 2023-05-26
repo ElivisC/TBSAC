@@ -62,9 +62,17 @@ FIELD_MAP 7700 210 -26 20 -1.44 1.44 0 0 hwr010 0
 - **Step 5**: Train your agent based on the simulated engine or DNN engine.
 - **Step 6**: Modify the `AcceleratorEngine` in `real_engine.py` to match your own task. And you can evaluate the agent
  on the real accelerator.
-
+ 
+##  Tips
+- After training, we found that the weights at around 10,000 steps perform better on the actual accelerator.
 
 ##  Some results
+
+[![We conducted experiments using 5 different random seeds for each module to verify the stablity of our method. And here is the smoothed training curves.](https://github.com/ElivisC/TBSAC/blob/main/figures/train_curves.png)](https://github.com/ElivisC/TBSAC/blob/main/figures/train_curves.png)
+
+[![The statistical results of 200 simulation experiments for CM1-CM3 in the orbit correction
+task. Among them, 100 experiments were conducted without errors, while the other 100 experiments
+added errors of ±5%.](https://github.com/ElivisC/TBSAC/blob/main/figures/simulation.png)](https://github.com/ElivisC/TBSAC/blob/main/figures/simulation.png)
 
 
 ---
