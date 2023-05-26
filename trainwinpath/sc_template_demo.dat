@@ -1,0 +1,28 @@
+; This basic template can be used as a reference.
+
+
+;CELL 1
+DRIFT 85 20 0 0 0
+superpose_map 0 0 0 0 0 0
+ERROR_QUAD_NCPL_STAT  1 0 @ERR_X1$ @ERR_Y1$ 0 0 0 0 0 0
+FIELD_MAP 70 350 0 20 @1SOL$ 1 0 0 sol 0
+superpose_map 0 0 0 0 0 0
+FIELD_MAP 70 350 0 20 @1DMAGNET_X$ 1 0 0 v3h 0
+superpose_map 0 0 0 0 0 0
+FIELD_MAP 70 350 0 20 @1DMAGNET_Y$ 1 0 0 v3v 0
+superpose_map 345 0 0 0 0 0
+SET_SYNC_PHASE
+FIELD_MAP 7700 210 -45 20 -1.48 1.48 0 0 hwr010 0;Ep25 = 2
+
+;CELL 2
+DRIFT 85 20 0 0 0
+superpose_map 0 0 0 0 0 0
+ERROR_QUAD_NCPL_STAT  1 0 @ERR_X2$ @ERR_Y2$ 0 0 0 0 0 0
+FIELD_MAP 70 350 0 20 @2SOL$ 1 0 0 sol 0
+superpose_map 0 0 0 0 0 0
+FIELD_MAP 70 350 0 20 @2DMAGNET_X$ 1 0 0 v3h 0
+superpose_map 0 0 0 0 0 0
+FIELD_MAP 70 350 0 20 @2DMAGNET_Y$ 1 0 0 v3v 0
+superpose_map 345 0 0 0 0 0
+SET_SYNC_PHASE
+FIELD_MAP 7700 210 -26 20 -1.44 1.44 0 0 hwr010 0

@@ -1,0 +1,5 @@
+trained_models*/
+CAFeII_SC_Proton/
+.idea/
+eeg/
+*__pycache__*
