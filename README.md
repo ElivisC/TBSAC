@@ -1,9 +1,9 @@
 # TBSAC:beam control method in superconducting linear accelerator
 
-[![GitHub stars](https://img.shields.io/github/stars/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/你的GitHub仓库名/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=yellow)](https://github.com/你的GitHub仓库名/issues)
-[![GitHub forks](https://img.shields.io/github/forks/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=orange&label=forks)](https://github.com/你的GitHub仓库名/network)
-[![GitHub watchers](https://img.shields.io/github/watchers/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=brightgreen&label=Watch)](https://github.com/你的GitHub仓库名/watchers)
+[![GitHub stars](https://img.shields.io/github/stars/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=deeppink&label=stars)](https://github.com/ElivisC/TBSAC/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=yellow)](https://github.com/ElivisC/TBSAC/issues)
+[![GitHub forks](https://img.shields.io/github/forks/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=orange&label=forks)](https://github.com/ElivisC/TBSAC/network)
+[![GitHub watchers](https://img.shields.io/github/watchers/ElivisC/TBSAC.svg?style=flat&logo=github&colorB=brightgreen&label=Watch)](https://github.com/ElivisC/TBSAC/watchers)
 
 ## Description
 
