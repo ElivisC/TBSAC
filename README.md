@@ -23,8 +23,7 @@ accomplish beam commissioning tasks while upholding the same standard as skilled
 Here we provide the source code of orbit correction task in the superconducting section in CAFe II. 
 
 ## Installation
-You can run  `pip install -r requirements.txt` to install the python packages
-
+You can run  `pip install -r requirements.txt` to install the python packages. And you can install the library of `ess-python-tools` with the command `pip install git+https://gitlab.esss.lu.se/ess-bp/ess-python-tools.git -U`
 ## How to use
 
 - **Step 1**: Firstly, you need to confirm whether there are any errors in the installation of magnets in the real accelerator (such as errors in the installation of the horizontal and vertical correction magnets). If there are errors, you need to integrate this information into the `real_engine.py`. In addition, the polarity of the measured solenoid in the real accelerator needs to be introduced into the lattice file(`.dat` for us) of your accelerator simulation software.
