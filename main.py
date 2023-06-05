@@ -31,17 +31,13 @@ def args_config():
     return args
 
 
-def evaluate_policy(args, model_index, env, seed):
+def evaluate_policy(args, agent, env, seed):
     times = args.evaluated_times
     env.action_space.seed(seed)
     env_evaluate.action_space.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
-    state_dim = env.observation_space.shape[0]
-    action_dim = env.action_space.shape[0]
-    max_action = float(env.action_space.high[0])
-    agent = SAC(state_dim, action_dim, max_action, use_cnn=True)
-    agent.load(f"{BASE_DIR}/trained_models_{particle.name}/sc_orbit_{model_index}")
+    
     evaluate_reward = 0
     init_rms_list = []
     final_rms_list = []
@@ -130,7 +126,7 @@ def train_policy(args, env, env_evaluate, seed):
 
             if (total_steps + 1) % evaluate_freq == 0:
                 evaluate_num += 1
-                evaluate_reward = evaluate_policy(env_evaluate, agent)
+                evaluate_reward = evaluate_policy(args, agent, env_evaluate, seed + 100)
                 evaluate_rewards.append(evaluate_reward)
 
                 print("evaluate_num:{} \t evaluate_reward:{}".format(evaluate_num, evaluate_reward))
@@ -189,4 +185,9 @@ if __name__ == "__main__":
     if args.mode == 'train':
         train_policy(args, env, env_evaluate, seed)
     if args.mode == 'test':
-        evaluate_policy(args, model_index, env_evaluate, seed + 100)
+        state_dim = env.observation_space.shape[0]
+        action_dim = env.action_space.shape[0]
+        max_action = float(env.action_space.high[0])
+        agent = SAC(state_dim, action_dim, max_action, use_cnn=True)
+        agent.load(f"{BASE_DIR}/trained_models_{particle.name}/sc_orbit_{model_index}") 
+        evaluate_policy(args, agent, env_evaluate, seed + 100)
